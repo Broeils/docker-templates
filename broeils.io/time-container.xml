@@ -57,7 +57,7 @@ You may need to run the following command to enable Time machine backups:
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Version>e5d8fcd</Version>
+  <Version>e5d8fcd-1</Version>
   <WebUI>afp://[IP]</WebUI>
   <WebUI></WebUI>
   <Icon>https://raw.githubusercontent.com/Broeils/docker-templates/master/broeils.io/img/Time-Machine-icon.png</Icon>
