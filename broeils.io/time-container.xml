@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <TemplateURL>https://raw.githubusercontent.com/broeils/docker-templates/master/broeils.io/time-container.xml</TemplateURL>
-  <Name>Time Container</Name>
+  <Name>time-container</Name>
   <Support>https://github.com/bobrik/time-container/issues</Support>
   <Project>https://github.com/bobrik/time-container</Project>
   <Description>Time capsule and apple share in docker.</Description>
