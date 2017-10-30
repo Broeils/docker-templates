@@ -12,7 +12,7 @@
   <Beta>False</Beta>
   <Category>Network:Management Tools:</Category>
   <Date>2014-8-4</Date>
-  <Changes>[center][img width='300px' src='https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/Time-Machine-icon.png'][/center]
+  <Changes>[center][img width='300px' src='https://raw.githubusercontent.com/Broeils/docker-templates/master/broeils.io/img/Time-Machine-icon.png'][/center]
 
 Note that Time Machine will not work on non-standard port, so use [b]548[/b].
 You may need to run the following command to enable Time machine backups:
@@ -29,7 +29,7 @@ You may need to run the following command to enable Time machine backups:
     </Variable>
     <Variable>
       <Name>AFPD_NAME</Name>
-      <Value>share_name</Value>
+      <Value>Time_Capsule</Value>
     </Variable>
     <Variable>
       <Name>PUID</Name>
@@ -60,7 +60,7 @@ You may need to run the following command to enable Time machine backups:
   <Version>e5d8fcd</Version>
   <WebUI>afp://[IP]</WebUI>
   <WebUI></WebUI>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/Time-Machine-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Broeils/docker-templates/master/broeils.io/img/Time-Machine-icon.png</Icon>
   <ExtraParams></ExtraParams>
 <BaseImage>lsiobase/xenial</BaseImage>
 </Container>
