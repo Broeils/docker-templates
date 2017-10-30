@@ -20,6 +20,18 @@ You may need to run the following command to enable Time machine backups:
 [i]defaults write com.apple.systempreferences TMShowUnsupportedNetworkVolumes 1[/i]</Changes>
   <Environment>
     <Variable>
+      <Name>AFPD_LOGIN</Name>
+      <Value>login</Value>
+    </Variable>
+    <Variable>
+      <Name>AFPD_PASSWORD</Name>
+      <Value>password</Value>
+    </Variable>
+    <Variable>
+      <Name>AFPD_NAME</Name>
+      <Value>share_name</Value>
+    </Variable>
+    <Variable>
       <Name>PUID</Name>
       <Value>99</Value>
     </Variable>
@@ -45,7 +57,8 @@ You may need to run the following command to enable Time machine backups:
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Version></Version>
+  <Version>e5d8fcd</Version>
+  <WebUI>afp://[IP]</WebUI>
   <WebUI></WebUI>
   <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/Time-Machine-icon.png</Icon>
   <ExtraParams></ExtraParams>
