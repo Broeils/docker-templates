@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/broeils/docker-templates/master/broeils.io/time-container.xml</TemplateURL>
+  <Name>Time Container</Name>
+  <Support>https://github.com/bobrik/time-container/issues</Support>
+  <Project>https://github.com/bobrik/time-container</Project>
+  <Description>Time capsule and apple share in docker.</Description>
+  <Registry>https://hub.docker.com/r/bobrik/time-container</Registry>
+  <Repository>bobrik/time-container</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Beta>False</Beta>
+  <Category>Network:Management Tools:</Category>
+  <Date>2014-8-4</Date>
+  <Changes>[center][img width='300px' src='https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/Time-Machine-icon.png'][/center]
+
+Note that Time Machine will not work on non-standard port, so use [b]548[/b].
+You may need to run the following command to enable Time machine backups:
+
+[i]defaults write com.apple.systempreferences TMShowUnsupportedNetworkVolumes 1[/i]</Changes>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>548</HostPort>
+        <ContainerPort>548</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/share</HostDir>
+      <ContainerDir>/share</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <WebUI></WebUI>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/Time-Machine-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+<BaseImage>lsiobase/xenial</BaseImage>
+</Container>
